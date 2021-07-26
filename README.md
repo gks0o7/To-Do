@@ -9,7 +9,7 @@ It is a task manager app in which we can set our task on priority basis, with re
 
 ![image](https://user-images.githubusercontent.com/69577099/127009198-88363fc9-d76c-49a0-abb7-4db46586f39e.png)
 
-**New task will sort itself**
+**New task will sort itself according to colour**
 
 ![image](https://user-images.githubusercontent.com/69577099/127009269-7257bdbd-d5d1-4075-a5dd-297e70fb306d.png)
 
