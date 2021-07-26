@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:'Lucida Sans';
+    font-size: 1.3rem;
+}
+:root{
+    --h : 4rem;
+    --w: var(--h) * 0.875;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.nav-bar{
+    position: relative;
+    height: var(--h);
+    width:100%;
+    background-color: rgb(43, 42, 42);    
+    display: flex;
+    align-items: center;
+}
+.add-delete-container{
+    position: absolute;
+    height: 87.5%;
+    width: calc(var(--w) * 2);
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    right: 3vw;    
+}
+.filter-container{
+    position: absolute;
+    height: 87.5%;
+    width: calc(var(--w) * 4);
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+    left: 3vw;
+}
+.filter{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink-color{
+    background-color: rgba(245, 27, 63, 0.877);
+}
+.blue-color{
+    background-color: blue;
+}
+.green-color{
+    background-color: green;
+}
+.yellow-color{
+    background-color: yellow;
+}
+.filter-button{
+    width : 80%;
+    height : 80%;
+    border-radius:8%;
+    transition: transform 0.2s;
+}
+.filter-button:hover{
+    transform: scale(0.9);
+}
+.filter-button.active{
+    box-shadow: 0px 0px 8px whitesmoke;
+    transform : scale(0.8);
+}
+.add,.delete{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-icons{
+    color: white;
+    font-size:2.3rem;
+    background-color: gray;
+    transition: transform 0.75s ease;
+    border-radius: 50%;
+}
+.material-icons:hover{
+    transform : rotate(-180deg);
+    cursor: pointer;
+}
+.ticket-container{
+    position: relative;
+    height: calc(100vh - 4rem);
+    width:100%;
+    background-image: url(https://wallpapercave.com/wp/wp5776851.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    overflow: auto;   
+}
+#qut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.wallpaperscraft.com/image/snow_winter_trees_136654_3840x2160.jpg);
+    background-position: center;
+    overflow: hidden;
+}
+.modal{
+    position: absolute;
+    display:flex;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 30%;
+    box-shadow: 0px 0px 50px 10px rgb(92, 91, 91);
+    top:calc((100vh - 5vw - 25rem) / 2);
+    left: calc((100vw - 35rem) / 2);
+    z-index: 1;
+}
+.task-to-be-added{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    
+    font-family:'Lucida Sans';
+    color: black;
+    background-color: rgb(207, 207, 207);
+    outline: none;
+    overflow-y:auto;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.task-filter-div{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    
+    background-color:  rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.close-button{
+    background-color: rgb(250, 0, 0);
+    position: absolute;
+    top:0px;
+    right:0px;
+    height: 2rem;
+    width:2rem;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: auto;
+}
+.close-button:hover{
+    opacity: 70%;
+    cursor:pointer;
+}
+.task-filter{
+    height: 15%;
+    width: 50%;
+    border-radius: 20%;
+}
+.logo-container{
+    position: absolute;
+    left: calc(42vw);
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+}
+.logo{
+    font-family: 'Lucida Sans';
+    width: 25vw;
+    font-weight: bolder;
+    font-style: oblique;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: letter-spacing .75s;    
+}
+.logo:hover{
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+
+
+.task-filter.active{
+    box-shadow: 0px 0px 20px whitesmoke;
+    
+}
+.task-filter:hover{
+    border: 2px solid rgb(192, 191, 191);
+}
+.ticket{
+    position: relative;
+    background-color: whitesmoke;
+    width: 20rem;
+    height: 10.5rem;    
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: 5px 5px gray;
+}
+
+.ticket-color{
+    width: 100%;
+    height: 6%;
+}
+.ticket-id{
+display: none;
+}
+.ticket-content{
+    padding: 7px;
+    height: 80%;
+    overflow: auto;
+}
+.blue-top-border{
+    border-top-color : blue;
+}
+.pink-top-border{
+    border-top-color : pink;
+}
+.green-top-border{
+    border-top-color : green;
+}
+.yellow-top-border{
+    border-top-color : yellow;
+}
+.ticket.selected.pink-shadow{
+    box-shadow: 0px 0px 20px 2px pink;
+}
+.ticket.selected.green-shadow{
+    box-shadow: 0px 0px 20px 2px green;
+}
+.ticket.selected.yellow-shadow{
+    box-shadow: 0px 0px 20px 2px yellow;
+}
+.ticket.selected.blue-shadow{
+    box-shadow: 0px 0px 20px 2px rgb(55, 120, 240);
+}
